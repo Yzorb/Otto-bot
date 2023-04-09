@@ -1,3 +1,23 @@
 {
-    "discord.enabled": true
+    "eslint.options": {
+        "extensions": [
+            ".js",
+            ".mjs"
+        ]
+    },
+    "files.associations": {
+        "*.mjs": "javascript"
+    },
+    "eslint.enable": true,
+    "eslint.run": "onType",
+    "discord.enabled": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.excludeLanguages": [
+        "markdown"
+    ]
 }

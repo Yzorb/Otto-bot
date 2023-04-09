@@ -1,0 +1,30 @@
+{
+  "name": "otto-bot",
+  "version": "1.0.0",
+  "description": "A simple bot for the discord platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yzorb/Otto-bot.git"
+  },
+  "keywords": [
+    "otto",
+    "ottobot",
+    "discord",
+    "discord.js",
+    "discordbot",
+    "bot"
+  ],
+  "author": "BrozyGL",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Yzorb/Otto-bot/issues"
+  },
+  "homepage": "https://github.com/Yzorb/Otto-bot#readme",
+  "devDependencies": {
+    "eslint": "^8.38.0"
+  }
+}
