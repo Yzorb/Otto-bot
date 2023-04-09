@@ -1,1 +1,1 @@
-console.log('hello word'); // problems: warc - Unexpected console statement. eslint(no-console)
+console.log('hello word'); // problems: warn - Unexpected console statement. eslint(no-console)
