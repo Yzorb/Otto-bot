@@ -1,3 +1,5 @@
-import debug from 'debug';
-debug.enable('otto:bot:*');
-import './src/index.js';
+import Otto from './src/Structures/Clients/Otto.js';
+
+const otto = new Otto();
+
+otto.connect();
