@@ -1,8 +1,8 @@
 {
   "name": "otto-bot",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "A simple bot for the discord platform.",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "debug": "^4.3.4",
-    "discord.js": "^14.9.0"
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3"
   }
 }

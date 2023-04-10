@@ -1,6 +1,7 @@
 import { GatewayIntentBits, Partials } from 'discord.js';
 
-export const workNameSpace = 'otto:bot';
+export const workNameSpace = 'otto:bot'; // Logger name space
+
 export const ClientOptions = {
 	intents: [
 		GatewayIntentBits.AutoModerationConfiguration,
@@ -22,7 +23,7 @@ export const ClientOptions = {
 		GatewayIntentBits.GuildWebhooks,
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.MessageContent
-	],
+	], // Discord.js client gateway intents
 	partials: [
 		Partials.Channel,
 		Partials.GuildMember,
@@ -31,5 +32,5 @@ export const ClientOptions = {
 		Partials.Reaction,
 		Partials.ThreadMember,
 		Partials.User
-	]
-};
+	] // Discord.js client partials events
+}; // Discord.js client options
