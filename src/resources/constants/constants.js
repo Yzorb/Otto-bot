@@ -34,3 +34,8 @@ export const ClientOptions = {
 		Partials.User
 	] // Discord.js client partials events
 }; // Discord.js client options
+
+export const APIS_URL_BASE = {
+	DISCORD: 'https://discord.com/api',
+	TWITCH: 'https://api.twitch.tv'
+};

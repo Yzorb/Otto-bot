@@ -1,0 +1,10 @@
+{
+	"event template": {
+		"scope": "javascript, typescript",
+		"prefix": "eventTemplate",
+		"body": [
+			"export default {\n\tname: 'event name',\n\tplataform: 'plataform for event',\n\tonce: false,\n\tcallback: (values) => {\n\t\ttry {\n\n\t\t} catch (error) {\n\n\t\t}\n\t}\n};"
+		],
+		"description": "create event template"
+	}
+}
