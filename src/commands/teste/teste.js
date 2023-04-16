@@ -1,14 +1,20 @@
 import CommandBase from '../../Structures/Bases/CommandBase.js';
-
 export default class extends CommandBase {
-    constructor() {
-        super();
+    constructor(otto, interaction) {
+        super(otto, interaction);
 
-        this.name = this.getName('teste1');
-        this.description = 'teste';
+        this.otto = otto;
+        this.interaction = interaction;
+
+        this.name = this.getName('command_test');
+        this.description = this.getDescription('command_test');
     }
 
-    callback(interaction) {
-        interaction.reply('teste');
+    callback() {
+        try {
+            this.interaction.reply('teste');
+        } catch (error) {
+            this.handlerError(error);
+        }
     }
 }

@@ -1,5 +1,5 @@
 import Otto from './Structures/Clients/Otto.js';
-import Config from './Structures/helpers/config/config.js';
+import Config from './Structures/helpers/config.js';
 
 new Config({
     debug: true,

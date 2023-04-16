@@ -1,12 +1,23 @@
-export default class CommandBase {
-    constructor() {}
+import { description, name, response } from '../../modules/language/language.js';
 
-    getName(name) {
-        const names = {
-            teste1: 'teste-1',
-            teste2: 'teste-2'
-        };
+export default class {
+    #otto;
+    #interaction;
 
-        return names[name];
+    constructor(otto, interaction) {
+        this.#otto = otto;
+        this.#interaction = interaction;
+        this.getName = name;
+        this.getDescription = description;
+        this.getResponse = response;
+    }
+
+    handlerError(commandError) {
+        try {
+            this.#interaction.editReply(commandError.message);
+            this.#otto.logger.error(commandError.stack);
+        } catch (error) {
+            this.#otto.logger.error(error.stack);
+        }
     }
 }

@@ -1,0 +1,4 @@
+command_test: 
+  name: 'test'
+  description: 'command for test'
+  response: '@{user} test for module language'

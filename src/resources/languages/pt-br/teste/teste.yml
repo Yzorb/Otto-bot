@@ -1,0 +1,4 @@
+command_test: 
+  name: 'teste'
+  description: 'commando de teste'
+  response: '@{user} teste do modulo de linguagem'

@@ -1,7 +1,7 @@
 import DebugLogger from 'debug';
 import dotenv from 'dotenv';
-import { workNameSpace } from '../../../resources/constants/constants.js';
-import logger from '../logger.js';
+import { workNameSpace } from '../../resources/constants/constants.js';
+import logger from './logger.js';
 export default class Config {
     constructor(options = {
         workSpace: workNameSpace,

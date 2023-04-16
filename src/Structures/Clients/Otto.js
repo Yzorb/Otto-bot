@@ -65,7 +65,7 @@ export default class Otto extends Client {
 
                     for (const file of files) {
                         const handler = (await import('../../commands/handler.js')).default;
-                        const command = new ((await import(`../../commands/${folder.name}/${file}`)).default)();
+                        const command = new ((await import(`../../commands/${folder.name}/${file}`)).default)(this, interaction);
 
                         if (interaction) {
                             handler(this, interaction, command);

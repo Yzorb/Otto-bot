@@ -4,13 +4,8 @@ export default (otto, interaction, commandsOptions) => {
             commandName
         } = interaction;
 
-        const {
-            name,
-            callback
-        } = commandsOptions;
-
-        if (commandName === name) {
-            callback(interaction);
+        if (commandName === commandsOptions.name) {
+            commandsOptions.callback();
         }
     } catch (error) {
         otto.logger.error(error.stack);
